@@ -1,0 +1,54 @@
+{
+  "name": "dsh-action-float",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "Action Float for DeepSeek Harness - live, per-session file diffs and command status in a quiet floating ticker.",
+  "license": "MIT",
+  "author": "chenqi18357",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenqi18357/dsh-action-float.git"
+  },
+  "homepage": "https://github.com/chenqi18357/dsh-action-float#readme",
+  "bugs": {
+    "url": "https://github.com/chenqi18357/dsh-action-float/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "diff",
+    "command",
+    "ui"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "diff.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

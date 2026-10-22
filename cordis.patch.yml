@@ -1,0 +1,5 @@
+# dsh-action-float bundle: the Host observes tools and serves a session-scoped
+# SSE feed; the Client renders the floating ticker and its Settings page.
+- insert:
+    - id: dsh-action-float
+      name: 'dsh-action-float'

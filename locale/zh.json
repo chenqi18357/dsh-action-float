@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-action-float",
+    "description": "AI 修改文件或执行命令时，在会话上方浮现逐行代码 diff 与命令状态，并缓慢上移、淡出。"
+  }
+}

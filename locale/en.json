@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-action-float",
+    "description": "Floats line-by-line diffs and command status above the conversation while the AI edits files or runs commands, then drifts upward and fades."
+  }
+}
